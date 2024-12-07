@@ -13,6 +13,7 @@ This is an Android application written in Kotlin, which requests a certain numbe
 - A graph with points connected by straight lines is displayed below the table. The points on the graph follow the x coordinate in ascending order.
 - All input errors are handled in the first screen
 - User can download screen image to device local storage and see it from gallery
+- Unit tests for ViewModel
 
 
 ## Technologies and libraries
@@ -23,3 +24,4 @@ This is an Android application written in Kotlin, which requests a certain numbe
 - Networking: Retrofit, Coroutines
 - Graph display: MPAndroidChart
 - DI: Koin
+- Testing: mockk, kotlinx-coroutines-test
