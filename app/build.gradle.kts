@@ -59,9 +59,11 @@ dependencies {
     implementation(libs.viewbindingpropertydelegate)
     implementation(libs.androidx.lifecycle.runtime.ktx)
 
-
     // Test Dependencies
     testImplementation(libs.junit)
+    testImplementation(libs.coreTesting)
+    testImplementation(libs.coroutinesTest)
+    testImplementation(libs.mockk)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
