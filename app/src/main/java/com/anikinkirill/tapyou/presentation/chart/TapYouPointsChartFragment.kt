@@ -1,7 +1,10 @@
 package com.anikinkirill.tapyou.presentation.chart
 
 import android.os.Bundle
+import android.view.Gravity
 import android.view.View
+import android.widget.LinearLayout.LayoutParams
+import android.widget.TableLayout
 import android.widget.TableRow
 import android.widget.TextView
 import android.widget.Toast
@@ -70,8 +73,16 @@ class TapYouPointsChartFragment : Fragment(R.layout.fragment_tap_you_points_char
                 // row
                 val row = TableRow(context)
                 // x and y entries in row
-                val xEntry = TextView(context).apply { text = point.x.toString() }
-                val yEntry = TextView(context).apply { text = point.y.toString() }
+                val xEntry = TextView(context).apply {
+                    text = point.x.toString()
+                    layoutParams = TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1f)
+                    gravity = Gravity.CENTER
+                }
+                val yEntry = TextView(context).apply {
+                    text = point.y.toString()
+                    layoutParams = TableRow.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT, 1f)
+                    gravity = Gravity.CENTER
+                }
                 row.addView(xEntry)
                 row.addView(yEntry)
                 // add to table
