@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TapYou</string>
+    <string name="network_error">Network Error. Try again later</string>
+    <string name="point_amount_hint_text">Enter points amount</string>
+    <string name="apply_button_text">Go</string>
+    <string name="x_point">X</string>
+    <string name="y_point">Y</string>
 </resources>
