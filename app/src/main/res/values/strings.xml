@@ -5,4 +5,7 @@
     <string name="apply_button_text">Go</string>
     <string name="x_point">X</string>
     <string name="y_point">Y</string>
+    <string name="no_permission_to_save_image">No permission to save image</string>
+    <string name="image_is_successfully_saved">Image saved to local storage</string>
+    <string name="image_is_not_saved">Operation to save image is failed</string>
 </resources>
